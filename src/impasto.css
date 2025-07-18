@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+  background-color: #1b2a49; /* 밤하늘 느낌 */
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #2f1e0c;
+}
+
+.impasto-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.impasto-card {
+  background-color: #fff8f0; /* 양피지 느낌 */
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border: 4px double #e1c699;
+  width: 100%;
+  max-width: 600px;
+}
+
+.impasto-title {
+  font-size: 34px;
+  color: #3a2b1a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.impasto-section {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px dashed #d5a75f;
+}
+
+.impasto-section h4 {
+  color: #3a2b1a;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.impasto-label {
+  display: block;
+  margin-bottom: 15px;
+  color: #4e321b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.impasto-select,
+.impasto-textarea {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e3a92d;
+  border-radius: 8px;
+  font-family: inherit;
+  margin-top: 5px;
+  background-color: #fff9e2;
+  color: #3e2b1e;
+}
+
+.impasto-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 16px;
+  background-color: #e1a32d;  /* 단색화 */
+  border: 2px solid #aa7d3b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.2s;
+}
+
+.impasto-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px #eac56e;
+}
+
+/* 📱 모바일 (최대 600px) */
+@media (max-width: 600px) {
+  .impasto-card {
+    padding: 20px;
+    border-width: 2px;
+  }
+
+  .impasto-title {
+    font-size: 24px;
+  }
+
+  .impasto-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .impasto-select,
+  .impasto-textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* 💻 데스크탑 (넓은 화면) */
+@media (min-width: 1000px) {
+  .impasto-card {
+    max-width: 720px;
+  }
+
+  .impasto-title {
+    font-size: 38px;
+  }
+
+  .impasto-button {
+    font-size: 22px;
+    padding: 18px;
+  }
+}
